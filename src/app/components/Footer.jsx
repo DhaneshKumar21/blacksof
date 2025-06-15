@@ -7,9 +7,9 @@ import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className='relative'>
-      <div className='flex justify-center items-center w-full'>
-        <div className='w-2/3'>
-          <Image src={brandLogo} alt='Supreme Group' className='h-16 aspect-auto !my-10' />
+      <div className='flex justify-center items-center w-full !my-10'>
+        <div className='w-2/3 flex flex-col gap-10'>
+          <Image src={brandLogo} alt='Supreme Group' className='h-16 aspect-auto' />
           <div className='flex justify-between md:justify-between flex-wrap gap-5'>
             <ul className='flex flex-col gap-5'>
               <li className='font-semibold uppercase text-opacity-90'>Applications</li>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li><Link href="/medium">Medium</Link></li>
             </ul>
           </div>
-          <div className='flex justify-between flex-wrap!my-10'>
+          <div className='flex justify-between flex-wrap gap-5'>
             <p>&copy;2023. All Rights Reserved.</p>
             <p>Supreme house: 110, 16th Road,Chembur, Mumbai - 400071.</p>
           </div>
