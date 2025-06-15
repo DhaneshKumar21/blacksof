@@ -46,7 +46,7 @@ const VideoAndTabs = ({ options }) => {
                                 onClick={() => handleChangeVideo(item)}
                             >
                                 <div className="flex items-center flex-col">
-                                    <div><Image src={item.assetPath} alt={item.title} width="50" height="50" /></div>
+                                    <div><Image src={item.assetPath} alt={item.title} width="50" height="50" className="max-w-8 max-h-8"/></div>
                                     <div className="text-xs md:text-base text-nowrap">{item.title}</div>
                                 </div>
                             </button>))
