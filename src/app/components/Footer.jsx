@@ -34,7 +34,10 @@ const Footer = () => {
             <ul className='flex flex-col gap-5'>
               <li className='mb-2 sg-translate font-semibold uppercase text-opacity-90'>Follow Us</li>
               <li><Link href="/twitter">Twitter</Link></li>
-              <li><Link href="/linkedin">LinkedIn</Link></li>
+              <li><Link target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/supreme-group-company/"
+              >LinkedIn</Link></li>
               <li><Link href="/instagram">Instagram</Link></li>
               <li><Link href="/medium">Medium</Link></li>
             </ul>
