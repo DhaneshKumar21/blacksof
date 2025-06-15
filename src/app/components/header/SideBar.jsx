@@ -20,7 +20,7 @@ const SideBar = ({ onToggleSideBar }) => {
                 </button>
             </div>
 
-            <ul className="space-y-4 overflow-auto h-[80vh]">
+            <ul className="space-y-4 overflow-auto h-[80vh]" onClick={onToggleSideBar}>
                 <ul className='flex flex-col gap-5'>
                     <li className='font-semibold uppercase text-opacity-90'>Applications</li>
                     <li><Link href="/apparel">Apparel</Link></li>
@@ -33,7 +33,7 @@ const SideBar = ({ onToggleSideBar }) => {
                     <li><Link href="/innovation">Innovation</Link></li>
                     <li><Link href="/global-competency">Global Competency</Link></li>
                     <li><Link href="/about-us">About Us</Link></li>
-                    <li><Link href="/contact-us">Contact Us</Link></li>
+                    <li><Link href="#contact-us">Contact Us</Link></li>
                 </ul>
                 <ul className='flex flex-col gap-5'>
                     <li className='mb-2 sg-translate font-semibold uppercase text-opacity-90'>More</li>
