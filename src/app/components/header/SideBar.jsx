@@ -20,23 +20,23 @@ const SideBar = ({ onToggleSideBar }) => {
                 </button>
             </div>
 
-            <ul className="space-y-4 overflow-auto h-[80vh]" onClick={onToggleSideBar}>
+            <ul className="space-y-4 overflow-auto h-[80vh] flex flex-col gap-5" onClick={onToggleSideBar}>
                 <ul className='flex flex-col gap-5'>
-                    <li className='font-semibold uppercase text-opacity-90'>Applications</li>
+                    <li className='font-bold uppercase text-opacity-90'>Applications</li>
                     <li><Link href="/apparel">Apparel</Link></li>
                     <li><Link href="/automotive">Automotive</Link></li>
                     <li><Link href="/filtration">Filtration</Link></li>
                     <li><Link href="/customized-solutions">Customized Solutions</Link></li>
                 </ul>
                 <ul className='flex flex-col gap-5'>
-                    <li className='mb-2 sg-translate font-semibold uppercase text-opacity-90'>Company</li>
+                    <li className='mb-2 sg-translate font-bold uppercase text-opacity-90'>Company</li>
                     <li><Link href="/innovation">Innovation</Link></li>
                     <li><Link href="/global-competency">Global Competency</Link></li>
                     <li><Link href="/about-us">About Us</Link></li>
                     <li><Link href="#contact-us">Contact Us</Link></li>
                 </ul>
                 <ul className='flex flex-col gap-5'>
-                    <li className='mb-2 sg-translate font-semibold uppercase text-opacity-90'>More</li>
+                    <li className='mb-2 sg-translate font-bold uppercase text-opacity-90'>More</li>
                     <li><Link href="/careers">Careers</Link></li>
                     <li><Link href="/privacy-policy">Privacy Policy</Link></li>
                     <li><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
