@@ -3,6 +3,8 @@ import React from 'react'
 import brandLogo from "../../../../public/images/Supreme_logos.svg";
 import Image from 'next/image';
 import { CloseIcon } from '@/app/commonSvgIcons';
+import translate from "../../../../public/images/translate.svg"
+
 
 const SideBar = ({ onToggleSideBar }) => {
     return (
@@ -17,6 +19,7 @@ const SideBar = ({ onToggleSideBar }) => {
                     <CloseIcon />
                 </button>
             </div>
+
             <ul className="space-y-4 overflow-auto h-[80vh]">
                 <ul className='flex flex-col gap-5'>
                     <li className='font-semibold uppercase text-opacity-90'>Applications</li>
@@ -39,6 +42,9 @@ const SideBar = ({ onToggleSideBar }) => {
                     <li><Link href="/terms-and-conditions">Terms and Conditions</Link></li>
                 </ul>
             </ul>
+            <div>
+                <Link href="/" className='flex justify-start items-center gap-2  font-medium'><Image src={translate} alt='Select language' /><span>ENG</span></Link>
+            </div>
         </div>
     )
 }

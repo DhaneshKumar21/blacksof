@@ -37,19 +37,21 @@ const VideoAndTabs = ({ options }) => {
 
             </div>
             <div className="flex items-center w-screen md:w-full overflow-auto">
-                {
-                    options.map(item => (
-                        <button
-                            key={item.id}
-                            className={`${selectedTab.id === item.id ? "opacity-100" : "opacity-60"} !m-5`}
-                            onClick={() => handleChangeVideo(item)}
-                        >
-                            <div className="flex items-center flex-col">
-                                <div><Image src={item.assetPath} alt={item.title} width="50" height="50" /></div>
-                                <div className="text-xs md:text-base text-nowrap">{item.title}</div>
-                            </div>
-                        </button>))
-                }
+                <div className="flex items-end">
+                    {
+                        options.map(item => (
+                            <button
+                                key={item.id}
+                                className={`${selectedTab.id === item.id ? "opacity-100" : "opacity-60"} !m-5`}
+                                onClick={() => handleChangeVideo(item)}
+                            >
+                                <div className="flex items-center flex-col">
+                                    <div><Image src={item.assetPath} alt={item.title} width="50" height="50" /></div>
+                                    <div className="text-xs md:text-base text-nowrap">{item.title}</div>
+                                </div>
+                            </button>))
+                    }
+                </div>
 
                 <div className="w-full text-center">
                     <PlayPauseButton

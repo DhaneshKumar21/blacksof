@@ -10,7 +10,7 @@ const Footer = () => {
       <div className='flex justify-center items-center w-full'>
         <div className='w-2/3'>
           <Image src={brandLogo} alt='Supreme Group' className='h-16 aspect-auto !my-10' />
-          <div className='flex md:justify-between flex-wrap gap-5'>
+          <div className='flex justify-between md:justify-between flex-wrap gap-5'>
             <ul className='flex flex-col gap-5'>
               <li className='font-semibold uppercase text-opacity-90'>Applications</li>
               <li><Link href="/apparel">Apparel</Link></li>
@@ -21,7 +21,7 @@ const Footer = () => {
             <ul className='flex flex-col gap-5'>
               <li className='mb-2 sg-translate font-semibold uppercase text-opacity-90'>Company</li>
               <li><Link href="/innovation">Innovation</Link></li>
-              <li><Link href="/global-competency">Global Competency</Link></li>
+              <li><Link href="/global-competency">Global</Link></li>
               <li><Link href="/about-us">About Us</Link></li>
               <li><Link href="/contact-us">Contact Us</Link></li>
             </ul>
